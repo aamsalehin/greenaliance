@@ -74,3 +74,6 @@ body{
 .para-2 a {
   color: #98d61c;
 }
+.fa-user, .fa-business-time{
+  font-size: 30px;
+}
