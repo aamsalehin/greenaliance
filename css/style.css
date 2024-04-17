@@ -414,4 +414,6 @@ span, a{
 .nav-scroll .navbar-nav li a{
 	color: #333 !important;
 }
-
+.reg-wrapper{
+	padding-top: 150px;
+}
