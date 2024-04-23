@@ -20,8 +20,10 @@
     include('header.php');
     ?>
    <div class="t-150">
-   <div class="container mt-4">
-        <h2 class="text-white pb-3">Vote Any Products or services</h2>
+   <div class="container  mt-4">
+      
+            <h4 class="text-white text-center pb-3">Vote Any Products or services <i class=" text-green fa-solid fa-thumbs-up"></i></h4>
+       
         <?php
             // Check if there is a notification from the registration process
             if(isset($_GET['result'])) {
@@ -67,22 +69,24 @@ $sql = "SELECT b.businessId, b.businessName, p.productId, p.productName, bp.pric
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo	'<div class="col-lg-4 col-md-6 col-sm-12 py-15">';	
-                   
 					echo '<div class="services_box box">';
 					echo '<div class="text">';
 					echo '<h4 class="box_title mb-20">'. htmlspecialchars($row["productName"]) .'</h4>';
 					echo '<h6><b>Company: </b>'. htmlspecialchars($row["businessName"]) .'</h6>';
-					echo '<p> <b>Description: </b>'. htmlspecialchars($row["description"]) .'</p>';
-					echo '<p> <b>Price:</b> $' . number_format($row["price"], 2) . '</p>';
-                    echo '<p><b>Pricing:</b> ' . $row["pricing"] . '</p>';
-                    echo '<p> <b>Environmental Benefits: </b>' . htmlspecialchars($row["environmentalBenefits"]) . '</p>';
+					echo '<p class="mt-2 pt-0 mb-0 pb-0"> <b>Description: </b>'. htmlspecialchars($row["description"]) .'</p>';
+                    echo '<p class="pricing"><b></b> ' . $row["pricing"] . '</p>';
+                    echo '<p class="mt-0 pt-0 mb-0 pb-0"> <b>Benefits: </b>' . htmlspecialchars($row["environmentalBenefits"]) . '</p>';
+					echo '<p class="mt-2 mb-0 pb-0">  $<b>' . number_format($row["price"], 0) . '</b></p>';
+					
 					echo '<form action="submit_vote.php" method="post">';
                     echo '<input type="hidden" name="productId" value="' . $row["productId"] . '">';
                     echo '<input type="hidden" name="residentId" value="' . $residentId . '">';
                     echo '<input type="hidden" name="businessId" value="' . $row["businessId"] . '">';
-                    echo '<p class="text-green">Did you find this product beneficial?</p>';
-                    echo '<button type="submit" name="vote" value="1" class="btn btn-success">Yes</button>';
-                    echo '<button type="submit" name="vote" value="0" class="btn btn-danger">No</button>';
+                    echo '<p class="text-center text-green  mt-2 mb-0 pb-0">Did you find this product beneficial?</p>';
+                    echo '<div class="text-center mt-0 pt-0 mb-0 pt-0">';
+                    echo '<button type="submit" name="vote" value="1" class="btn mt-0 pt-0 btn-cs btn-success"><i class=" text-success  fa-solid fa-thumbs-up"></i></button>';
+                    echo '<button type="submit" name="vote" value="0" class="btn mt-0 pt-0  btn-cs btn-danger"><i class=" text-danger  fa-solid fa-thumbs-down"></i></button>';
+                    echo '</div>';
                     echo '</form>';
                     echo '</div>';
                     echo '</div>';

@@ -458,4 +458,24 @@ span, a{
  }
  #searchTerm{
 	background-color:transparent;
+	color: white;
+ }
+ #searchTerm:focus{
+	color: white;
+ }
+
+ .pricing{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px;
+	background-color:#98d61c;
+	color: white;
+	font-style: italic;
+	font-weight: 700;
+ }
+ .btn-cs{
+	border: none!important;
+	background-color: #fff !important;
+	color: #98d61c!important;;
  }

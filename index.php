@@ -132,10 +132,9 @@
 					echo '<h4 class="box_title mb-20">'. htmlspecialchars($row["productName"]) .'</h4>';
 					echo '<h6><b>Company: </b>'. htmlspecialchars($row["businessName"]) .'</h6>';
 					echo '<p> <b>Description: </b>'. htmlspecialchars($row["description"]) .'</p>';
-					echo '<p> <b>Price:</b> $' . number_format($row["price"], 2) . '</p>';
-                    echo '<p><b>Pricing:</b> ' . $row["pricing"] . '</p>';
-                    echo '<p> <b>Environmental Benefits: </b>' . htmlspecialchars($row["environmentalBenefits"]) . '</p>';
-					
+                    echo '<p class="pricing"><b></b> ' . $row["pricing"] . '</p>';
+                    echo '<p> <b>Benefits: </b>' . htmlspecialchars($row["environmentalBenefits"]) . '</p>';
+					echo '<p>  $<b>' . number_format($row["price"], 0) . '</b></p>';
 					echo '</div>';
 					echo '</div>';
 					echo '</div>';
