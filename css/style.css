@@ -432,10 +432,10 @@ span, a{
 	color: #98d61c;
 }
 .text-green{
-	color: #98d61c;
+	color: #98d61c !important;
 }
 .bg-green{
-	background-color: #98d61c25;
+	background-color: #98d61c !important;
 }
 
 .added_message{

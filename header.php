@@ -23,7 +23,18 @@ session_start();
         <a class="nav-link" href="voting.php">Vote</a>
       </li>
       <?php endif; ?>
-      <?php if(isset($_SESSION['businessId'])||isset($_SESSION['residentId'])): ?>
+      <?php if(isset($_SESSION['businessId'])): ?>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="./admin">Dashboard</a>
+      </li>
+      <?php endif; ?>
+      <?php if(isset($_SESSION['email'])=='admin@admin.com'): ?>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="./admin_super">Dashboard</a>
+      </li>
+      <?php endif; ?>
+     
+      <?php if(isset($_SESSION['businessId'])||isset($_SESSION['residentId'])||isset($_SESSION['email'])=='admin@admin.com'): ?>
         
                 <li class="nav-item">
                     <form action="logout.php" method="POST" ">
@@ -37,11 +48,14 @@ session_start();
                 <li class="nav-item ml-2">
         <a class="nav-link" href="register.php">Register</a>
        </li>
+       <li class="nav-item ml-2">
+        <a style="color:dodgerblue;" class="nav-link text-green" href="./admin_super">Admin Login</a>
+      </li>
             <?php endif; ?>
 
 
 
-
+            
 
 
 	  

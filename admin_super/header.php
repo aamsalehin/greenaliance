@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,14 +28,24 @@ session_start();
         <a class="nav-link" href="index.php">All products</a>
       </li>
       <li class="nav-item ml-2">
-        <a class="nav-link" href="addproduct.php">Add New Service</a>
-      </li>
-      <li class="nav-item ml-2">
-        <a class="nav-link" href="productdetails.php">Add product details</a>
-      </li>
-      <li class="nav-item ml-2">
         <a class="nav-link" href="addarea.php">Add area</a>
       </li>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="buisnesses.php">Buisnesses</a>
+      </li>
+      <li class="nav-item ml-2">
+        <a  class="nav-link text-green" href="ranking.php">Ranking</a>
+      </li>
+      <?php
+session_start();
+if (isset($_SESSION['email'])=='admin@admin.com') {
+    ?>
+    <li class="nav-item ml-2">
+        <a class="nav-link" href="logout.php">Logout</a>
+      </li>
+<?php 
+}
+?>
 	  
       <!-- <li class="nav-item ml-2">
         <a class="nav-link" href="#about">About</a>
@@ -46,18 +54,7 @@ session_start();
         <a class="nav-link" href="#services">Services</a>
       </li> -->
 	  
-      <?php if(isset($_SESSION['businessId'])): ?>
-                <li class="nav-item">
-                    <form action="logout.php" method="POST" ">
-                        <a href="logout.php" type="submit" class="nav-link">Logout</a>
-                    </form>
-                </li>
-            
-            <?php else: ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="../userlogin.php">Login</a>
-                </li>
-            <?php endif; ?>
+    
 
 
 

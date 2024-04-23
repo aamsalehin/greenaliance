@@ -73,7 +73,7 @@
 					</div>
 					
 				</div>
-				<a href="buisnessreg.html" class="btn btn-success mb-5">Register your Buisness with us</a>
+				<a href="buisnessreg.php" class="btn btn-success mb-5">Register your Buisness with us</a>
 			</div>
 		</div>
 		

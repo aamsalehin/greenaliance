@@ -16,8 +16,8 @@
   <body>
   <?php include "header.php";?>
     <div class="signup-box container">
-      <h1>Sign Up</h1>
-      <h4>Register Your Buisness Here</h4>
+      
+      <h4 class="pt-5">Sign up as a resident here</h4>
      
       <?php
             
