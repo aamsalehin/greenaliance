@@ -15,6 +15,9 @@ session_start();
       <li class="nav-item ml-2">
         <a class="nav-link" href="index.php">Home</a>
       </li>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="products.php">Products</a>
+      </li>
       <?php if(isset($_SESSION['residentId'])): ?>
       <li class="nav-item ml-2">
         <a class="nav-link" href="voting.php">Vote</a>

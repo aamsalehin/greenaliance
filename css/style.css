@@ -434,6 +434,9 @@ span, a{
 .text-green{
 	color: #98d61c;
 }
+.bg-green{
+	background-color: #98d61c25;
+}
 .added_message{
 	font-weight: 700;
 	 color: green;

@@ -24,7 +24,7 @@
             if(isset($_GET['result'])) {
               $message= $_GET["result"];
               if($message=='added'){
-                echo "<p class='added_message'> Buisness added Succesfully!</p>";
+                echo "<p class='added_message'> Resident added Succesfully!</p>";
               }
               if($message=='duplicate'){
                 echo "<p class='duplicate_message'>Resident already added! Try new one</p>";
