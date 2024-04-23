@@ -16,12 +16,26 @@
 
 <?php include "header.php";?>
 
-<section id="services" class="services section_padding">
+<section id="services" class="services t-150">
+<div class="text-white container text-center">
+        
+        <form action="search.php" method="get">
+            <div class="form-group ">
+                
+                <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter product or service name">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="priceFilter" name="priceFilter">
+                <label class="form-check-label" for="priceFilter">Show products below $200</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
 	<div class="container">
 		<div class="row">
-			<div class="section_title text-center">
-				<p class="mt-5">What Does Green Cities Allience Offer?</p>
-				<h3 class="text-white">products & Services</h3>
+			<div class="section_title mb-2 text-center">
+				<p class="mt-3">What Does Green Cities Allience Offer?</p>
+				<!-- <h3 class="text-white">products & Services</h3> -->
 			</div>
 
 			<?php

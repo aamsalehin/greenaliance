@@ -437,6 +437,7 @@ span, a{
 .bg-green{
 	background-color: #98d61c25;
 }
+
 .added_message{
 	font-weight: 700;
 	 color: green;
@@ -454,4 +455,7 @@ span, a{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: verdana, geneva, sans-serif;
+ }
+ #searchTerm{
+	background-color:transparent;
  }
