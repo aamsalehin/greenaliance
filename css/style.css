@@ -163,8 +163,12 @@ span, a{
 
 /*** service section css ***/
 .services .services_box{
+	height: 100%;
 	border: 1px solid #fafafa;
+	border: 1px solid #98d61c;
+	
 	transition: all 0.5s;
+	background-color: #fff;
 
 }
 
@@ -417,3 +421,34 @@ span, a{
 .reg-wrapper{
 	padding-top: 150px;
 }
+
+.nav-link button{
+	background:none !important ;
+	border : none;
+}
+
+/* //product box button css */
+.product_box_button{
+	color: #98d61c;
+}
+.text-green{
+	color: #98d61c;
+}
+.added_message{
+	font-weight: 700;
+	 color: green;
+ }
+ .duplicate_message{
+	 font-weight: 700;  
+	 color: red;
+ }
+ .t-150{
+	margin-top: 150px;
+ }
+ .b-image{
+	margin: 0 auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/PHOTO-2024-04-13-20-24-23.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: verdana, geneva, sans-serif;
+ }

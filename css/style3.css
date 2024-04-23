@@ -3,14 +3,14 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/PHOTO-2024-04-13-20-24-23.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  
 }
 
 .signup-box {
-  /* width: 360px; */
   text-align: center;
   margin: auto;
   background-color: rgba(44, 62, 80,0.7);
- margin-top: 150px;
+  margin-top: 150px !important;
   border-radius: 3px;
 }
 
@@ -69,4 +69,8 @@ p {
 }
 .para-2 a {
   color: #98d61c;
+}
+.nav-item button{
+  background:none!important;
+  border: none;
 }
